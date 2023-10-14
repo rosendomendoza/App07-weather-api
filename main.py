@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from search_temp import search_temp
 
 app = Flask(__name__)
 
@@ -8,7 +9,7 @@ def home():
 
 @app.route("/api/v1/<station>/<date>")
 def api(station, date):
-    temperature = 23
+    temperature = search_temp(station, date)
     return {"station": station,
             "date": date,
             "temperature": temperature}
