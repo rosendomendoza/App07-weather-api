@@ -2,15 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Wheather Data API</title>
+    <h1>Wheather Data API</h1>
 </head>
 <body>
-<h1>This is a Wheather Data API</h1>
+<h2>For a Station in a particular day: </h2>
 <p>URL format: http://127.0.0.1:5000/api/v1/station/date</p>
-<p>URL example: <A HREF="http://127.0.0.1:5000/api/v1/10/2000-10-24">
+<p>Example   : <A HREF="http://127.0.0.1:5000/api/v1/10/2000-10-24">
     http://127.0.0.1:5000/api/v1/10/2000-10-24</A></p>
 <br>
-<p>{{data | safe}}</p>
-
+<h2>For all data of a particular station: </h2>
+<p>URL format: http://127.0.0.1:5000/api/v1/station</p>
+<p>Example   : <A HREF="http://127.0.0.1:5000/api/v1/10">
+    http://127.0.0.1:5000/api/v1/10</A></p>
+<br>
+<h2>For data of a particular station in range of date: </h2>
+<p>URL format: http://127.0.0.1:5000/api/v1/station/from/to</p>
+<p>Example   : <A HREF="http://127.0.0.1:5000/api/v1/10/1900-01-01/1950-12-31">
+    http://127.0.0.1:5000/api/v1/10/1900-01-01/1950-12-31</A></p>
+<br>
+<br>
+<p>See <a href="/table_station/">Table Stations</a></p>
 
 </html>
