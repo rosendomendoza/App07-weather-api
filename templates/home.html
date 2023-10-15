@@ -5,20 +5,26 @@
     <h1>Wheather Data API</h1>
 </head>
 <body>
-<h2>For a Station in a particular day: </h2>
-<p>URL format: http://127.0.0.1:5000/api/v1/station/date</p>
-<p>Example   : <A HREF="http://127.0.0.1:5000/api/v1/10/2000-10-24">
-    http://127.0.0.1:5000/api/v1/10/2000-10-24</A></p>
-<br>
+
 <h2>For all data of a particular station: </h2>
-<p>URL format: http://127.0.0.1:5000/api/v1/station</p>
-<p>Example   : <A HREF="http://127.0.0.1:5000/api/v1/10">
-    http://127.0.0.1:5000/api/v1/10</A></p>
+<p>URL format: http://127.0.0.1:5000/api/v1/all/station</p>
+<p>Example   : <A HREF="http://127.0.0.1:5000/api/v1/all/10">
+    http://127.0.0.1:5000/api/v1/all/10</A></p>
+<br>
+<h2>For a Station in a particular Year: </h2>
+<p>URL format: http://127.0.0.1:5000/api/v1/yearly/station/year</p>
+<p>Example   : <A HREF="http://127.0.0.1:5000/api/v1/yearly/10/2000">
+    http://127.0.0.1:5000/api/v1/yearly/10/2000</A></p>
+<br>
+<h2>For a Station in a particular day: </h2>
+<p>URL format: http://127.0.0.1:5000/api/v1/day/station/date</p>
+<p>Example   : <A HREF="http://127.0.0.1:5000/api/v1/day/10/2000-10-24">
+    http://127.0.0.1:5000/api/v1/day/10/2000-10-24</A></p>
 <br>
 <h2>For data of a particular station in range of date: </h2>
-<p>URL format: http://127.0.0.1:5000/api/v1/station/from/to</p>
-<p>Example   : <A HREF="http://127.0.0.1:5000/api/v1/10/1900-01-01/1950-12-31">
-    http://127.0.0.1:5000/api/v1/10/1900-01-01/1950-12-31</A></p>
+<p>URL format: http://127.0.0.1:5000/api/v1/range/station/from/to</p>
+<p>Example   : <A HREF="http://127.0.0.1:5000/api/v1/range/10/1900-01-01/1950-12-31">
+    http://127.0.0.1:5000/api/v1/range/10/1900-01-01/1950-12-31</A></p>
 <br>
 <br>
 <p>See <a href="/table_station/">Table Stations</a></p>
